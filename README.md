@@ -3,10 +3,16 @@
 This module provides a class named `CompositeError` that extends the standard `Error` class with the ability to wrap
 other errors.
 
+## Installation
+
+```
+$ npm install composite-error
+```
+
 ## Usage
 
 You can wrap an error into a `CompositeError` to provide additional context without losing the original error
-information. 
+information.
 
 ```javascript
 var CompositeError = require('composite-error');
