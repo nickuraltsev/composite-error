@@ -1,7 +1,7 @@
 'use strict';
 
 var CompositeError = require('../');
-var should = require('should');
+require('should');
 
 describe('CompositeError', function() {
     describe('#stack', function() {
@@ -92,7 +92,7 @@ describe('CompositeError', function() {
 function usingMockStackTraceFormatter(func) {
     var originalStackFormatter = Error.prepareStackTrace;
     try {
-        Error.prepareStackTrace = function(e, frames) {
+        Error.prepareStackTrace = function(e) {
             return '<stack trace: ' + e.message + '>'
         };
         return func();

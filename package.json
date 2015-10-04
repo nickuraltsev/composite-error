@@ -24,9 +24,11 @@
     },
     "devDependencies": {
         "mocha": "2.3.3",
-        "should": "7.1.0"
+        "should": "7.1.0",
+        "eslint": "1.6.0"
     },
     "scripts": {
-        "test": "./node_modules/.bin/mocha --reporter spec test/compositeError.test.js"
+        "test": "node_modules/.bin/mocha --reporter spec test/compositeError.test.js",
+        "lint": "eslint lib/** test/** examples/**"
     }
 }
