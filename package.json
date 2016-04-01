@@ -28,7 +28,7 @@
         "eslint": "^2.5.3"
     },
     "scripts": {
-        "test": "node_modules/.bin/mocha --reporter spec test/compositeError.test.js",
-        "lint": "eslint lib/** test/** examples/**"
+        "test": "mocha --reporter spec",
+        "lint": "eslint lib test examples"
     }
 }
