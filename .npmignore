@@ -1,4 +1,6 @@
-node_modules
-npm-debug.log
-.DS_Store
+node_modules/
+examples/
 test/
+npm-debug.log
+test/
+**/.*
