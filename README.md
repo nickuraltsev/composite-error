@@ -1,5 +1,7 @@
 # composite-error
 
+[![npm version](https://badge.fury.io/js/composite-error.svg)](https://badge.fury.io/js/composite-error)
+
 This module provides a class named `CompositeError` that extends the standard `Error` class with the ability to wrap
 other errors.
 
