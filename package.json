@@ -1,34 +1,34 @@
 {
-    "name": "composite-error",
-    "version": "0.1.1",
-    "description": "Error wrapping in Node.js",
-    "keywords": [
-        "error",
-        "wrapping",
-        "stacktrace",
-        "stack",
-        "trace"
-    ],
-    "bugs": {
-        "url": "https://github.com/nickuraltsev/composite-error/issues"
-    },
-    "license": "MIT",
-    "author": {
-        "name": "Nick Uraltsev",
-        "email": "nick.uraltsev@gmail.com"
-    },
-    "main": "lib/compositeError.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/nickuraltsev/composite-error.git"
-    },
-    "devDependencies": {
-        "mocha": "^2.4.5",
-        "should": "^8.3.0",
-        "eslint": "^2.5.3"
-    },
-    "scripts": {
-        "test": "mocha --reporter spec",
-        "lint": "eslint lib test examples"
-    }
+  "name": "composite-error",
+  "version": "0.1.1",
+  "description": "Error wrapping in Node.js",
+  "keywords": [
+    "error",
+    "wrapping",
+    "stacktrace",
+    "stack",
+    "trace"
+  ],
+  "bugs": {
+    "url": "https://github.com/nickuraltsev/composite-error/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nick Uraltsev",
+    "email": "nick.uraltsev@gmail.com"
+  },
+  "main": "lib/compositeError.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nickuraltsev/composite-error.git"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.3.0",
+    "eslint": "^2.5.3"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "lint": "eslint lib test examples"
+  }
 }

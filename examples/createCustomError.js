@@ -4,8 +4,8 @@ var CompositeError = require('..');
 var util = require('util');
 
 function MyCustomError(message, innerErrors) {
-    CompositeError.call(this, message, innerErrors);
-    this.name = 'MyCustomError';
+  CompositeError.call(this, message, innerErrors);
+  this.name = 'MyCustomError';
 }
 
 util.inherits(MyCustomError, CompositeError);
