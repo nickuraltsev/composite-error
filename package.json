@@ -23,9 +23,9 @@
     "url": "https://github.com/nickuraltsev/composite-error.git"
   },
   "devDependencies": {
-    "mocha": "^2.4.5",
-    "should": "^8.3.0",
-    "eslint": "^2.5.3"
+    "mocha": "^3.0.2",
+    "should": "^11.1.0",
+    "eslint": "^3.4.0"
   },
   "scripts": {
     "test": "mocha --reporter spec",
