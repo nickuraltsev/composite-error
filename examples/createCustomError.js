@@ -1,15 +1,14 @@
 'use strict';
 
-var CompositeError = require('..');
-var util = require('util');
+const CompositeError = require('..');
 
-function MyCustomError(message, innerErrors) {
-  CompositeError.call(this, message, innerErrors);
-  this.name = 'MyCustomError';
+class MyCustomError extends CompositeError {
+  constructor(message, innerErrors) {
+    super(message, innerErrors);
+    this.name = 'MyCustomError';
+  }
 }
 
-util.inherits(MyCustomError, CompositeError);
-
-var originalError = new Error('Oops');
-var myCustomError = new MyCustomError('Something went wrong', originalError);
+const originalError = new Error('Oops');
+const myCustomError = new MyCustomError('Something went wrong', originalError);
 console.log(myCustomError.stack);

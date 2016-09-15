@@ -21,7 +21,7 @@ $ npm install --save composite-error
 ### Wrapping an error
 
 ```javascript
-var CompositeError = require('composite-error');
+const CompositeError = require('composite-error');
 
 try {
   doSomething();
@@ -52,11 +52,11 @@ class MyCustomError extends CompositeError {
 Not using the ES2015 class syntax:
 
 ```javascript
-var util = require('util');
+const util = require('util');
 
 function MyCustomError(message, innerErrors) {
-    CompositeError.call(this, message, innerErrors);
-    this.name = 'MyCustomError';
+  CompositeError.call(this, message, innerErrors);
+  this.name = 'MyCustomError';
 }
 
 util.inherits(MyCustomError, CompositeError);
@@ -69,9 +69,9 @@ The `stack` property of a `CompositeError` returns a string containing the stack
 For example, the following code
 
 ```javascript
-var firstError = new Error('First error');
-var secondError = new CompositeError('Second error', firstError);
-var thirdError = new CompositeError('Third error', secondError);
+const firstError = new Error('First error');
+const secondError = new CompositeError('Second error', firstError);
+const thirdError = new CompositeError('Third error', secondError);
 console.log(thirdError.stack);
 ```
 
